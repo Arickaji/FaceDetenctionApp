@@ -13,7 +13,6 @@ grayscale_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # DETECT FACES
 face_cordinations = trained_face_data.detectMultiScale(grayscale_img)
 
-
 # draw rectangle around the face and multiple faces
 for (x, y, w, h) in face_cordinations:
     cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 4)
